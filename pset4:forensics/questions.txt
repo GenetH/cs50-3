@@ -1,0 +1,48 @@
+questions.txt
+
+Fanney Zhu
+fanneyzhu@college.harvard.edu
+
+0.  BMP - 2^24; GIF - 2^8; JPEG - 2^24; PNG - 2^24
+1.  GIF
+2.  Lossy compression - some information is lost in the compression 
+    process, but the loss is imperceptible to the human eye; permits
+    reconstruction only of an approximation of the original data.
+    Lossless compression - no information is lost in the compression
+    process, so the decompressed image is exactly the same as the
+    original; allows original data to be perfectly reconstructed
+    from compressed data.
+3.  JPEG
+4.  First, the system modifies the filename's first character in the
+    file's directory entry to signal that the file has been deleted
+    and that the directory entry can be recycled. Then, the system
+    moves all of the file's FAT clusters to the hard drive's list of 
+    free clusters. The actual file data is never touched.
+5.  Overwrite all addressable locations with a random character,
+    overwrite against with the character's complement, and then 
+    verify. Overwriting the drive's data will ensure with high 
+    probability that the files deleted cannot be recovered.
+6.  stdint.h is a header file that declares sets of integer types 
+    that have specified widths (aka the number of bits used to store
+    its value in a binary system).
+7.  Assigns macros specified widths. intN_t denotes a signed integer
+    type with a with of N bits and uintN_t denotes an unsigned
+    integer type with a width of N bits.
+8.  BYTE - 1 byte; DWORD - 4 bytes; LONG - 4 bytes; WORD - 2 bytes
+9.  In ASCII - BM
+10. biSize is the number of bytes required by the structure. bfSize
+    is the number of bytes of the bitmap file.
+11. A negative biHeight means that the bitmap is top-down, so the 
+    origin is at the upper-left corner.
+12. biBitCount
+13. fopen might return NULL if there is no more space.
+14. The third argument says to read one element.
+15. 3
+16. fseek, in this case, skips over any padding (by moving the 
+    position indicator to a position after the padding). More 
+    generally, fseek(inptr, n, location) functions in the file that 
+    "inptr" points to by moving the file position "n" bytes from 
+    "location" (which can be: SEEK_CUR, SEEK_SET, SEEK_END).
+17. SEEK_CUR is a reference to the current position to the file
+    pointer.
+18. Rob Bowden

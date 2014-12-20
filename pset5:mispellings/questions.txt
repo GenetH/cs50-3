@@ -1,0 +1,40 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis is a lung disease
+    caused by inhaling silica dust.
+1.  getrusage returns the resource usage measures.
+2.  16
+3.  This allows the program to be more readable and user-friendly. 
+    If the values were passed to calculate (instead of before and 
+    after), other programmers may not know what the values refer to. 
+4.  While the end of the file has not been reached yet, continue 
+    to get a char. If the char is an alphabetical character or an
+    apostrophe, store the char into an array that represents a word
+    (by storing the char at index 0 and then incrementing index by 
+    one for the next char). If the index, which represents the 
+    length of the alphabetical string, exceeds the maximum length a 
+    word can be (which is 45 in this case), ignore the entire 
+    alphabetical string and reset the index of the word array to 0 
+    to prepare for the next word. If the char is a digit, ignore 
+    the entire alphanumeric string and reset the index of the word 
+    array to 0 to prepare for the next word. Else, the alphabetical 
+    string must be word. Terminate the word with '\0' and increment 
+    the word counter. Then, get the resource usage, check the word's 
+    spelling, and get the resource usage after. Calculate the time
+    to check spelling and update the total time. If the word is
+    misspelled, print the misspelled word and increment the 
+    misspelled word counter. Else, reset the word array to 0 to 
+    prepare for the next word and repeat the process.
+5.  fscanf does not allow us to check if each char in the string is
+    an alphabetical character or an apostrophe. Relying on fscanf 
+    alone might result in strings that consist of other characters
+    other than alphabetical characters and apostrophes.
+6.  const char* is a mutable pointer to an immutable character/
+    string. You cannot change the contents of the location(s) that
+    the pointer points to. Check and load were declared as const to
+    make sure that the program does not change the contents.
+7.  I used a hashtable. The hashtable is an array of pointers that 
+    point to nodes, which contains a string and a pointer. 
+8.  For austinpowers.txt, my code was around 0.50
+9.  At first, I made my own hashFunction but it was really slow. I 
+    played around with the hashFunction to see how it would affect 
+    the time. Ultimately, I ended up finding a hashFunction online.
+10. I was not able to find the ideal hashFunction and hashSize.
